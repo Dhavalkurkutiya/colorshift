@@ -1,0 +1,21 @@
+{
+  "name": "colorshift",
+  "displayName": "ColorShift",
+  "description": "Transform your coding experience with ColorShift, a vibrant and customizable color theme extension for Visual Studio Code. Designed to enhance readability and reduce eye strain, ColorShift offers a dynamic palette that adapts to your workflow—whether you’re debugging late into the night or crafting code in the daylight. With smooth transitions, bold contrasts, and carefully curated hues, this extension brings your editor to life. Tailor it to your style with easy customization options, and shift the way you see your code. Perfect for developers who crave both aesthetics and functionality.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.97.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "ColorShift",
+        "uiTheme": "vs-dark",
+        "path": "./themes/ColorShift-color-theme.json"
+      }
+    ]
+  }
+}
