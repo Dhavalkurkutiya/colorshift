@@ -1,11 +1,197 @@
 {
-	"name": "ColorShift Material",
+	"name": "ColorShift Material Pro",
 	"type": "dark",
 	"colors": {
 		"editor.background": "#263238",         // Primary dark base
 		"editor.foreground": "#EEFFFF",         // Primary text
+		"foreground": "#EEFFFF",                // UI foreground color
+		"focusBorder": "#82AAFF",               // Border color for focused elements
+		"selection.background": "#80CBC420",    // Background color of text selections
+		"descriptionForeground": "#B0BEC5",     // Description text color
+		
+		// Activity Bar
+		"activityBar.background": "#1E272C",    // Activity bar background
+		"activityBar.foreground": "#EEFFFF",    // Activity bar foreground
+		"activityBar.inactiveForeground": "#78909C", // Inactive activity bar item
+		"activityBar.border": "#1E272C",        // Activity bar border
 		"activityBarBadge.background": "#82AAFF", // Accent blue
-		"sideBarTitle.foreground": "#B0BEC5"    // Secondary text (Material Blue Gray 200)
+		"activityBarBadge.foreground": "#000000", // Badge text color
+		
+		// Sidebar
+		"sideBar.background": "#1E272C",        // Sidebar background
+		"sideBar.foreground": "#EEFFFF",        // Sidebar foreground
+		"sideBar.border": "#1E272C",            // Sidebar border
+		"sideBarTitle.foreground": "#B0BEC5",   // Secondary text (Material Blue Gray 200)
+		"sideBarSectionHeader.background": "#1E272C", // Sidebar section header background
+		"sideBarSectionHeader.foreground": "#B0BEC5", // Sidebar section header foreground
+		
+		// List
+		"list.activeSelectionBackground": "#314549", // Background of selected item when list is active
+		"list.activeSelectionForeground": "#EEFFFF", // Foreground of selected item when list is active
+		"list.inactiveSelectionBackground": "#2A373E", // Background of selected item when list is inactive
+		"list.inactiveSelectionForeground": "#EEFFFF", // Foreground of selected item when list is inactive
+		"list.hoverBackground": "#344046",      // List background when hovering
+		"list.hoverForeground": "#EEFFFF",      // List foreground when hovering
+		"list.highlightForeground": "#82AAFF",  // Highlight foreground color
+		
+		// Editor
+		"editorLineNumber.foreground": "#546E7A", // Line number foreground
+		"editorLineNumber.activeForeground": "#B0BEC5", // Active line number foreground
+		"editorCursor.foreground": "#FFCC00",   // Cursor foreground
+		"editor.selectionBackground": "#80CBC440", // Editor selection background
+		"editor.selectionHighlightBackground": "#80CBC425", // Selection highlight background
+		"editor.wordHighlightBackground": "#80CBC425", // Word highlight background
+		"editor.wordHighlightStrongBackground": "#80CBC440", // Strong word highlight background
+		"editor.findMatchBackground": "#FF5252A0", // Find match background
+		"editor.findMatchHighlightBackground": "#FFCC0050", // Find match highlight background
+		"editorBracketMatch.background": "#80CBC420", // Bracket match background
+		"editorBracketMatch.border": "#80CBC4",  // Bracket match border
+		"editorIndentGuide.background": "#37474F", // Indent guide background
+		"editorIndentGuide.activeBackground": "#546E7A", // Active indent guide background
+		"editorRuler.foreground": "#37474F",    // Editor ruler foreground
+		"editorCodeLens.foreground": "#546E7A", // Code lens foreground
+		"editorGroupHeader.tabsBackground": "#1E272C", // Editor group header tabs background
+		"editorGroup.border": "#1E272C",        // Editor group border
+		
+		// Tabs
+		"tab.activeBackground": "#263238",      // Active tab background
+		"tab.activeForeground": "#EEFFFF",      // Active tab foreground
+		"tab.inactiveBackground": "#1E272C",    // Inactive tab background
+		"tab.inactiveForeground": "#78909C",    // Inactive tab foreground
+		"tab.activeBorderTop": "#82AAFF",       // Active tab top border
+		"tab.unfocusedActiveBorderTop": "#546E7A", // Unfocused active tab top border
+		"tab.border": "#1E272C",                // Tab border
+		
+		// Status Bar
+		"statusBar.background": "#1E272C",      // Status bar background
+		"statusBar.foreground": "#B0BEC5",      // Status bar foreground
+		"statusBar.border": "#1E272C",          // Status bar border
+		"statusBar.debuggingBackground": "#C792EA", // Debugging status bar background
+		"statusBar.debuggingForeground": "#FFFFFF", // Debugging status bar foreground
+		"statusBar.noFolderBackground": "#1E272C", // Status bar background when no folder is open
+		"statusBarItem.hoverBackground": "#314549", // Status bar item background when hovering
+		"statusBarItem.remoteBackground": "#82AAFF", // Remote status bar item background
+		"statusBarItem.remoteForeground": "#000000", // Remote status bar item foreground
+		
+		// Title Bar
+		"titleBar.activeBackground": "#1E272C", // Title bar background when window is active
+		"titleBar.activeForeground": "#EEFFFF", // Title bar foreground when window is active
+		"titleBar.inactiveBackground": "#1E272C", // Title bar background when window is inactive
+		"titleBar.inactiveForeground": "#78909C", // Title bar foreground when window is inactive
+		
+		// Input
+		"input.background": "#2A373E",          // Input box background
+		"input.foreground": "#EEFFFF",          // Input box foreground
+		"input.border": "#546E7A",              // Input box border
+		"input.placeholderForeground": "#78909C", // Input box placeholder foreground
+		"inputOption.activeBorder": "#82AAFF",  // Border color of activated options in input fields
+		
+		// Dropdown
+		"dropdown.background": "#2A373E",       // Dropdown background
+		"dropdown.foreground": "#EEFFFF",       // Dropdown foreground
+		"dropdown.border": "#546E7A",           // Dropdown border
+		
+		// Button
+		"button.background": "#82AAFF",         // Button background
+		"button.foreground": "#000000",         // Button foreground
+		"button.hoverBackground": "#A2BEFF",    // Button background when hovering
+		
+		// Scrollbar
+		"scrollbar.shadow": "#00000030",        // Scrollbar shadow
+		"scrollbarSlider.background": "#78909C50", // Scrollbar slider background
+		"scrollbarSlider.hoverBackground": "#78909C80", // Scrollbar slider background when hovering
+		"scrollbarSlider.activeBackground": "#78909CAA", // Scrollbar slider background when active
+		
+		// Badge
+		"badge.background": "#82AAFF",          // Badge background
+		"badge.foreground": "#000000",          // Badge foreground
+		
+		// Progress Bar
+		"progressBar.background": "#82AAFF",    // Progress bar background
+		
+		// Panel
+		"panel.background": "#1E272C",          // Panel background
+		"panel.border": "#546E7A",              // Panel border
+		"panelTitle.activeBorder": "#82AAFF",   // Active panel title border
+		"panelTitle.activeForeground": "#EEFFFF", // Active panel title foreground
+		"panelTitle.inactiveForeground": "#78909C", // Inactive panel title foreground
+		
+		// Terminal
+		"terminal.background": "#1E272C",       // Terminal background
+		"terminal.foreground": "#EEFFFF",       // Terminal foreground
+		"terminal.ansiBlack": "#000000",        // Terminal ansi black
+		"terminal.ansiRed": "#FF5252",          // Terminal ansi red
+		"terminal.ansiGreen": "#C3E88D",        // Terminal ansi green
+		"terminal.ansiYellow": "#FFCA28",       // Terminal ansi yellow
+		"terminal.ansiBlue": "#82AAFF",         // Terminal ansi blue
+		"terminal.ansiMagenta": "#C792EA",      // Terminal ansi magenta
+		"terminal.ansiCyan": "#89DDFF",         // Terminal ansi cyan
+		"terminal.ansiWhite": "#EEFFFF",        // Terminal ansi white
+		"terminal.ansiBrightBlack": "#546E7A",  // Terminal ansi bright black
+		"terminal.ansiBrightRed": "#FF8A80",    // Terminal ansi bright red
+		"terminal.ansiBrightGreen": "#E6EE9C",  // Terminal ansi bright green
+		"terminal.ansiBrightYellow": "#FFE57F", // Terminal ansi bright yellow
+		"terminal.ansiBrightBlue": "#B0C9FF",   // Terminal ansi bright blue
+		"terminal.ansiBrightMagenta": "#E1BEE7", // Terminal ansi bright magenta
+		"terminal.ansiBrightCyan": "#B2EBF2",   // Terminal ansi bright cyan
+		"terminal.ansiBrightWhite": "#FFFFFF",  // Terminal ansi bright white
+		
+		// Git
+		"gitDecoration.modifiedResourceForeground": "#FFCA28", // Modified git resource foreground
+		"gitDecoration.deletedResourceForeground": "#FF5252",  // Deleted git resource foreground
+		"gitDecoration.untrackedResourceForeground": "#C3E88D", // Untracked git resource foreground
+		"gitDecoration.ignoredResourceForeground": "#546E7A",  // Ignored git resource foreground
+		"gitDecoration.conflictingResourceForeground": "#FF8A80", // Conflicting git resource foreground
+		
+		// Peek View
+		"peekView.border": "#82AAFF",           // Peek view border
+		"peekViewEditor.background": "#1E272C", // Peek view editor background
+		"peekViewEditor.matchHighlightBackground": "#FFCA2850", // Peek view editor match highlight background
+		"peekViewResult.background": "#1E272C", // Peek view result background
+		"peekViewResult.matchHighlightBackground": "#FFCA2850", // Peek view result match highlight background
+		"peekViewResult.selectionBackground": "#314549", // Peek view result selection background
+		"peekViewTitle.background": "#1E272C",  // Peek view title background
+		"peekViewTitleLabel.foreground": "#EEFFFF", // Peek view title label foreground
+		
+		// Notifications
+		"notificationCenter.border": "#546E7A", // Notification center border
+		"notificationCenterHeader.foreground": "#EEFFFF", // Notification center header foreground
+		"notificationCenterHeader.background": "#1E272C", // Notification center header background
+		"notificationToast.border": "#546E7A",  // Notification toast border
+		"notifications.foreground": "#EEFFFF",  // Notifications foreground
+		"notifications.background": "#1E272C",  // Notifications background
+		"notificationLink.foreground": "#82AAFF", // Notification link foreground
+		
+		// Extensions
+		"extensionButton.prominentBackground": "#82AAFF", // Extension button background
+		"extensionButton.prominentForeground": "#000000", // Extension button foreground
+		"extensionButton.prominentHoverBackground": "#A2BEFF", // Extension button background when hovering
+		
+		// Welcome Page
+		"welcomePage.buttonBackground": "#2A373E", // Welcome page button background
+		"welcomePage.buttonHoverBackground": "#314549", // Welcome page button background when hovering
+		
+		// Breadcrumbs
+		"breadcrumb.foreground": "#78909C",     // Breadcrumb foreground
+		"breadcrumb.focusForeground": "#EEFFFF", // Breadcrumb focus foreground
+		"breadcrumb.activeSelectionForeground": "#82AAFF", // Breadcrumb active selection foreground
+		"breadcrumbPicker.background": "#1E272C", // Breadcrumb picker background
+		
+		// Settings
+		"settings.headerForeground": "#EEFFFF", // Settings header foreground
+		"settings.modifiedItemIndicator": "#82AAFF", // Settings modified item indicator
+		"settings.dropdownBackground": "#2A373E", // Settings dropdown background
+		"settings.dropdownForeground": "#EEFFFF", // Settings dropdown foreground
+		"settings.dropdownBorder": "#546E7A",   // Settings dropdown border
+		"settings.checkboxBackground": "#2A373E", // Settings checkbox background
+		"settings.checkboxForeground": "#EEFFFF", // Settings checkbox foreground
+		"settings.checkboxBorder": "#546E7A",   // Settings checkbox border
+		"settings.textInputBackground": "#2A373E", // Settings text input background
+		"settings.textInputForeground": "#EEFFFF", // Settings text input foreground
+		"settings.textInputBorder": "#546E7A",  // Settings text input border
+		"settings.numberInputBackground": "#2A373E", // Settings number input background
+		"settings.numberInputForeground": "#EEFFFF", // Settings number input foreground
+		"settings.numberInputBorder": "#546E7A" // Settings number input border
 	},
 	"tokenColors": [
 		{
@@ -468,6 +654,126 @@
 			"scope": ["markup.table"],
 			"settings": {
 				"foreground": "#EEFFFF"         // Primary text
+			}
+		},
+		// Language-specific customizations
+		{
+			"name": "Python Decorators",
+			"scope": [
+				"meta.function.decorator.python",
+				"meta.function.decorator.identifier.python"
+			],
+			"settings": {
+				"foreground": "#FF9E80",  // Material Deep Orange A100
+				"fontStyle": "italic"
+			}
+		},
+		{
+			"name": "Python Self Parameter",
+			"scope": [
+				"variable.parameter.function.language.special.self.python"
+			],
+			"settings": {
+				"foreground": "#C792EA",  // Secondary purple
+				"fontStyle": "italic"
+			}
+		},
+		{
+			"name": "JavaScript React JSX Tags",
+			"scope": [
+				"support.class.component.jsx",
+				"support.class.component.tsx"
+			],
+			"settings": {
+				"foreground": "#FF8A65",  // Material Deep Orange 300
+				"fontStyle": "italic"
+			}
+		},
+		{
+			"name": "JavaScript/TypeScript Imports",
+			"scope": [
+				"keyword.operator.module.js",
+				"keyword.operator.module.ts",
+				"keyword.operator.module.tsx"
+			],
+			"settings": {
+				"foreground": "#C792EA"  // Secondary purple
+			}
+		},
+		{
+			"name": "TypeScript Type Annotations",
+			"scope": [
+				"meta.type.annotation.ts",
+				"meta.type.annotation.tsx",
+				"meta.type.parameters.ts",
+				"meta.type.parameters.tsx"
+			],
+			"settings": {
+				"foreground": "#4FC3F7"  // Material Light Blue 300
+			}
+		},
+		{
+			"name": "CSS Variables",
+			"scope": [
+				"source.css support.type.property-name.variable.css",
+				"source.css variable.css"
+			],
+			"settings": {
+				"foreground": "#80CBC4"  // Material Teal 200
+			}
+		},
+		{
+			"name": "CSS Units",
+			"scope": [
+				"keyword.other.unit.px.css",
+				"keyword.other.unit.rem.css",
+				"keyword.other.unit.em.css",
+				"keyword.other.unit.vh.css",
+				"keyword.other.unit.vw.css",
+				"keyword.other.unit.percentage.css"
+			],
+			"settings": {
+				"foreground": "#FFCA28"  // Material Amber 400
+			}
+		},
+		{
+			"name": "Markdown Code Blocks",
+			"scope": [
+				"markup.fenced_code.block.markdown",
+				"markup.inline.raw.string.markdown"
+			],
+			"settings": {
+				"foreground": "#80CBC4"  // Material Teal 200
+			}
+		},
+		{
+			"name": "JSON Key-Value Separator",
+			"scope": [
+				"punctuation.separator.dictionary.key-value.json"
+			],
+			"settings": {
+				"foreground": "#89DDFF"  // Material Cyan 200
+			}
+		},
+		{
+			"name": "YAML Keys",
+			"scope": [
+				"entity.name.tag.yaml"
+			],
+			"settings": {
+				"foreground": "#C792EA"  // Secondary purple
+			}
+		},
+		{
+			"name": "HTML/JSX Attribute Names",
+			"scope": [
+				"entity.other.attribute-name.html",
+				"entity.other.attribute-name.jsx",
+				"entity.other.attribute-name.tsx"
+			],
+			"settings": {
+				"fontStyle": "italic",
+				"foreground": "#FFCA28"  // Material Amber 400
 			}
 		}
 	]

@@ -1,21 +1,89 @@
 {
-  "name": "colorshift",
-  "displayName": "ColorShift",
-  "description": "Transform your coding experience with ColorShift, a vibrant and customizable color theme extension for Visual Studio Code. Designed to enhance readability and reduce eye strain, ColorShift offers a dynamic palette that adapts to your workflow—whether you’re debugging late into the night or crafting code in the daylight. With smooth transitions, bold contrasts, and carefully curated hues, this extension brings your editor to life. Tailor it to your style with easy customization options, and shift the way you see your code. Perfect for developers who crave both aesthetics and functionality.",
-  "version": "0.0.1",
+  "name": "colorshift-material-pro",
+  "displayName": "ColorShift Material Pro",
+  "description": "Transform your coding experience with ColorShift Material Pro, a comprehensive Material Design theme for Visual Studio Code. Designed to enhance readability and reduce eye strain, ColorShift offers a vibrant palette with carefully curated colors that adapt to your workflow. With smooth transitions, bold contrasts, and meticulous attention to UI details, this theme brings your editor to life while maintaining professional aesthetics. Perfect for developers who value both functionality and visual appeal.",
+  "version": "1.0.0",
+  "publisher": "ColorShift",
   "engines": {
     "vscode": "^1.97.0"
   },
   "categories": [
     "Themes"
   ],
+  "keywords": [
+    "theme",
+    "material",
+    "dark theme",
+    "material design",
+    "colorshift"
+  ],
+  "icon": "images/icon.png",
+  "galleryBanner": {
+    "color": "#263238",
+    "theme": "dark"
+  },
   "contributes": {
     "themes": [
       {
-        "label": "ColorShift",
+        "label": "ColorShift Material Pro",
         "uiTheme": "vs-dark",
         "path": "./themes/ColorShift-color-theme.json"
+      },
+      {
+        "label": "ColorShift Material Pro - Morning",
+        "uiTheme": "vs-dark",
+        "path": "./themes/ColorShift-morning-theme.json"
+      },
+      {
+        "label": "ColorShift Material Pro - Evening",
+        "uiTheme": "vs-dark",
+        "path": "./themes/ColorShift-evening-theme.json"
+      }
+    ],
+    "configuration": {
+      "title": "ColorShift Material Pro",
+      "properties": {
+        "colorshift.enableTimeBasedShifting": {
+          "type": "boolean",
+          "default": false,
+          "description": "Automatically shift colors based on time of day"
+        },
+        "colorshift.morningStartHour": {
+          "type": "number",
+          "default": 6,
+          "description": "Hour when morning theme begins (24-hour format)"
+        },
+        "colorshift.eveningStartHour": {
+          "type": "number",
+          "default": 18,
+          "description": "Hour when evening theme begins (24-hour format)"
+        }
+      }
+    },
+    "commands": [
+      {
+        "command": "colorshift.toggleTimeBasedShifting",
+        "title": "ColorShift: Toggle Time-Based Color Shifting"
       }
     ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/colorshift/colorshift-material-pro"
+  },
+  "bugs": {
+    "url": "https://github.com/colorshift/colorshift-material-pro/issues"
+  },
+  "homepage": "https://github.com/colorshift/colorshift-material-pro",
+  "main": "./src/extension.js",
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "dependencies": {
+    "vscode": "^1.97.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.0.0",
+    "@types/vscode": "^1.97.0"
   }
 }
