@@ -28,8 +28,8 @@ To enable this feature:
 You can customize the time ranges in your settings:
 
 ```json
-"colorshift.morningStartHour": 6,  // Hour when morning theme begins (24-hour format)
-"colorshift.eveningStartHour": 18  // Hour when evening theme begins (24-hour format)
+"colorshift.morningStartHour": 6,  
+"colorshift.eveningStartHour": 18  
 ```
 
 ## Installation
